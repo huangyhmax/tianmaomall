@@ -1,0 +1,198 @@
+.buyPageDiv{
+    margin: 20px auto;
+    max-width: 1013px;
+}
+.buyFlow::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.address{
+    margin: 20px 5px;
+    text-align: left;
+}
+.addressTip,.productListTip{
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.address .addressTable{
+    margin: 20px 20px;
+    width: 600px;
+    font-size: 12px;
+    /*border: 1px solid red;*/
+}
+.address .addressTable td{
+    color: #333333;
+    text-align: right;
+    vertical-align: top;
+    padding-right: 5px;
+    text-align: left;
+    height: 30px;
+    /*border: 1px solid blue;*/
+}
+.address .addressTable td.firstColumn{
+    width: 100px;
+}
+.address .addressTable td textarea{
+    border: 1px solid #AFAFAF;
+    margin-bottom: 10px;
+    width: 400px;
+}
+.address .addressTable td input{
+    border: 1px solid #AFAFAF;
+    width: 400px;
+}
+span.redStar{
+    color: red;
+    font-size: 8px;
+}
+.productListTable{
+    width: 100%;
+    border-collapse: separate;
+    font-size: 12px;
+}
+.productListTable th{
+    /*border:1px solid blue;*/
+    color: #999;
+    font-family: "宋体";
+    font-size: 12px;
+    text-align: left;
+    padding-bottom: 5px;
+}
+.rowborder td{
+    background-color: #b2d1ff;
+    border-right: 2px solid #fff;
+    height: 3px;
+}
+/*.productListTableFirstColumn{
+    text-align: left!important;
+}*/
+.tmallbuy{
+    width: 15px;
+}
+a.marketLink{
+    color: black;
+    font-size: 12px;
+    font-family: "宋体";
+}
+a.marketLink:hover{
+    text-decoration: underline;
+}
+.wangwangGif{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/img/site/wangwang.gif) no-repeat;
+    background-attachment: scroll;
+    background-color: transparent;
+    background-position: -80px -65px;
+    background-position: -83px -0px;
+    position: relative;
+    top: 8px;
+    left: 2px;
+}
+.productListTableTbody td{
+    text-align: center;
+    /*border:1px solid blue;*/
+}
+.orderItemFirstTD{
+    text-align: left;
+}
+.orderItemTR td{
+    border-bottom: 1px solid #E5E5E5;
+    padding: 10px 0px;
+}
+.orderItemImg{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #E9E9E9;
+}
+.orderItemProductInfo{
+    text-align:left!important; 
+}
+.orderItemProductInfo img{
+    height: 16px;
+}
+.orderItemProductLink{
+    color: #666;
+    display: block;
+}
+.orderItemProductLink:hover{
+    text-decoration: underline;
+}
+.orderItemProductPrice,.orderItemProductNumber,.orderItemUnitSum{
+    color:#000;
+}
+.orderItemUnitSum{
+    font-weight: bold;
+}
+.orderItemFirstTD,.orderItemLastTD{
+    border-bottom: 0px solid black !important;
+}
+.orderItemDeliveryLabel{
+    color: #666;
+    font-family: "宋体";
+    font-size:12px; 
+}
+.orderItemDeliverySelect{
+    width: 100px;
+    height: 23px;
+}
+.orderItemSumDiv{
+    padding: 20px;
+    border-top: 2px solid #B4D0FF;
+    background-color: #F2F6FF;
+    /*height: 60px;*/
+}
+.orderItemSumDiv::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.orderItemSumDiv span{
+    color:#999;
+}
+.leaveMessageText{
+    /*display: inline-block;*/
+    vertical-align: middle;
+    margin-right: 10px;
+    float: left;
+}
+.submitOrderDiv{
+    height: 40px;
+    margin: 20px 0px;
+}
+.submitOrderButton{
+    text-decoration: none!important;
+    border: 1px solid #C40000;
+    background-color: #C40000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white!important;
+    float: right;
+    display:inline-block;
+    margin:0px 10px;
+    width:180px;
+    height: 40px;
+    
+}
+.TotalSum{
+    color: #C40000 !important;
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 1px dotted #F2F6FF;
+}
+.orderItemSumDiv span{
+    color: #999;
+}
+.leaveMessageTextareaSpan .leaveMessageTextarea{
+    display:none;
+    height: 100px;
+    width: 230px;
+    border: 1px solid #FFAD35;
+}

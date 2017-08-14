@@ -1,0 +1,363 @@
+/*公共部分的样式*/
+body,div,a,span,nav{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.container{
+    width: 1024px;
+    margin: 0 auto;
+    /*background: green;*/
+}
+.header{
+    min-width: 1024px;
+    background-color: #f2f2f2;
+}
+.footer{
+    min-width: 1024px;
+    /*background: blue;*/
+}
+.footer-top{
+    border-top: 1px solid #e7e7e7;
+    /*background: red;*/
+}
+.footer-bottom{
+    /*background: black;*/
+}
+.mid{
+    width: 1024px;
+    margin: 0 auto;
+}
+.redCat{
+    color: #C40000 !important;
+}
+.topnav{
+    background-color: #f2f2f2;
+    padding: 5px 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+.topnav a,.topnav span{
+    color: #999;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.topnav a:hover,.searchtips a:hover{
+    color: #C40000;
+}
+.right{
+    float: right !important;
+}
+.searchdiv{
+    background-color: #C40000;
+    width: 400px;
+    height: 40px;
+    margin:30px auto 57px auto;
+    padding: 1px;
+}
+.search{
+    width: 275px;
+    height: 36px;
+    outline: none;
+    border: 1px solid transparent;
+    margin: 1px;
+}
+.searchbutton{
+    background-color: #C40000;
+    border:none; /* border:1px solid transparent*/
+    width: 110px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.searchtips a{
+    font-size: 14px;
+    color: #999;
+    padding: 0 20px;
+    text-decoration: none;
+}
+.searchtips span{
+    color: #999;
+    
+}
+.searchtips{
+    margin-left: -20px;
+    margin-top: 3px;
+}
+.tmall-logo{
+    position: absolute;
+    top: 6px;
+    left: 200px;
+    z-index: -1;
+    margin: 30px 0;
+        
+}
+.partone{
+    /*margin-top: 500px;*/
+    /*border-top: 1px solid #e7e7e7;*/
+}
+.partone .pics{
+    margin: 24px 0;
+    text-align: center;/*居中*/
+}
+.linkdiv{
+    margin: 0 20px;
+    border-top: 1px solid #e7e7e7;
+    padding-top:30px; 
+}
+.linkdiv .boxchoose{
+    width: 20%;
+    float: left;
+    padding-left: 15px;
+}
+.linkdiv .boxchoose a{
+    display: block;
+    padding-top: 3px;
+    text-decoration: none;
+    color: #999;
+}
+.linkdiv .boxchoose a:hover{
+    color: #C40000;
+}
+.boxchoose-tip{
+    font-size: 16px;
+    font-weight: bold;
+    color: #646464;
+}
+.clearfix:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.footer{
+    border-top: 1px solid #e7e7e7;
+}
+.footer-main{
+    background-color: black;
+    border-top: 2px solid #C40000;
+}
+.tmall-pic{
+    margin-left: 100px;
+}
+.footer-main{
+    
+}
+.footer-main .part a{
+    color: #fff;
+    font-size: 12px;
+    padding: 0 5px;
+    /*margin: 10px 0;
+    padding: 0 5px;*/
+
+}
+.footer-main .part{
+    padding: 10px 0;
+}
+.footer-main .part span{
+    color: #fff;
+}
+.footer-main .license span{
+    /*margin: 10px 0;*/
+    color: #686868;
+    font-size: 12px;
+}
+.footer-main .license .year{
+    color: #686868;
+    padding: 10px 0;
+}
+.footer-main .license .pics{
+    padding-bottom: 20px;
+}
+
+
+/*公共部分的样式*/
+
+
+
+
+
+/*首页部分的样式*/
+.Carousel{
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+}
+.carousel-control.right{
+    z-index: 1;
+}
+.headbar{
+    height: 30px;
+    background-color: #DD2727;
+    margin-top: 20px;
+}
+/*.leftMenu,.rightMenu{
+    float: left
+}*/
+.leftMenu{
+    width: 200px;
+    background-color: #C60A0A;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    padding-left: 10px;
+    display: inline-block
+}
+.rightMenu{
+    display: inline-block;
+    line-height: 30px;
+}
+.rightMenu img{
+    height: 30px;
+}
+.rightMenu a{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+.carousel-of-product{
+    height: 510px;
+    width: 1024px;
+    margin: 0 auto;
+}
+.carouselImage{
+    height: 510px !important;
+}
+/*.carouselBackgroundDiv{
+    width: 100%;
+    height: 510px;
+    background-color: #E8E8E8;
+    position: absolute;
+    top: 36px;
+    z-index: -1;
+
+}*/
+.carousel-of-product .contr{
+    background-color: red;
+    position: relative;
+}
+.categorychoose{
+    position: absolute;
+    top: 205px;
+    left: 143px;
+}
+.catagorymenu{
+    position: absolute;
+    width: 200px;
+    background-color: #e2e2e3;
+    margin-left: 20px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.catagorymenu a{
+    color: #000;
+}
+.catagorymenu a:hover{
+    color: lightskyblue;
+    text-decoration:  none;
+}
+.productsAsideCategorys{
+    width: 825px;
+    height: 510px;
+    background-color: #fff;
+    margin-left: 220px;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 1;
+}
+.productsAsideCategorys .row{
+    margin: 20px 40px 0px 80px;
+}
+.productsAsideCategorys .row .seperator{
+    margin-top: 20px;
+    border-bottom: 1px dashed #e7e7e7;
+}
+.productsAsideCategorys a{
+    color: #999;
+    font-size: 14px;
+    margin: 8px;
+}
+.productsAsideCategorys a:hover{
+    color: #C40000;
+    text-decoration: none;
+}
+.catagorymenu2{
+    line-height: 30px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.catagorymenu2 span{
+    margin-right: 10px;
+}
+.catagorymenu2:hover{
+    background-color: #fff;
+}
+/**首页部分的样式*/
+
+.homepageCategoryProducts{
+    max-width: 1024px;
+    margin: 10px auto;
+    padding: 50px 10px;
+    background-color: #F5F5F5;
+}
+.eachHomepageCategoryProducts{
+    margin-bottom: 40px;
+}
+.productItem{
+    width: 189px;
+    height: 285px;
+    border:1px solid #fff;
+    background-color: #fff;
+    margin: 8px 4px;
+    float: left;
+    cursor: pointer;
+}
+.productItem .productItemDesc{
+    font-size: 12px;
+    color: #666666;
+    display: block;
+    padding: 16px;
+}
+.productItem .productPrice{
+    font-size: 16px;
+    color: #FF003a;
+    display: block;
+    padding-left: 16px;
+    margin-top: -10px;
+}
+.productItem img{
+    width: 187px;
+    height: 190px;
+}
+.productItem img:hover{
+    opacity: 0.7;
+}
+.productItem .productItemDescLink{
+    height: 66px;
+    text-decoration: none;
+}
+.categoryTitle{
+    font-size: 16px;
+    margin-left: 30px;
+    color: #646464;
+    font-weight: bold;
+}
+.left-mark{
+    display: inline-block;
+    height: 20px;
+    vertical-align:top;
+    width: 5px;
+    background-color: #19C8A9;
+}
+.endpng{
+    display: block;
+    width: 82px;
+    margin: 0 auto;
+}

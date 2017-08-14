@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.payPageDiv{
+    max-width: 1013px;
+    margin: 10px auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.payLogo{
+    /*margin: 20px;*/
+    position: relative;
+    top: 15px;
+    left: 40px;
+}
+.confirmMoneyText{
+    color: #4D4D4D;
+}
+.confirmMoney{
+    display: block;
+    color: #FF6600;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+}
+.confirmPay{
+    text-decoration: none!important;
+    color: white!important;
+    background-color: #00AAEE;
+    border: 1px solid #00AAEE;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    width: 107px;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px;
+}

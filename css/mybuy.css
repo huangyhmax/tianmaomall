@@ -1,0 +1,186 @@
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.boughtDiv{
+    max-width: 1013px;
+    margin: 30px auto;
+}
+.orderType>div{
+    border-bottom: 2px solid #E8E8E8;
+    float: left;
+    /*padding:0px 15px 0px 5px;
+    margin: 5px;
+    border-right: 1px solid #ccc;*/
+}
+
+.orderType>div a{
+    border-right: 1px solid #E8E8E8;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+    text-decoration:none;
+    color: black;
+    font-weight: bold;
+}
+.orderType>div a:hover{
+    color: #C40000;
+}
+
+.orderTypeLastOne{
+    /*width:100%;*/
+    border-bottom:2px solid #E8E8E8;
+    height: 34px;
+    float: none !important;
+    overflow:hidden;
+
+    /*margin-top: -1px;*/
+}
+.choosestatus.hover{
+    border-bottom: 2px solid #C40000;
+}
+.choosestatus.hover a{
+    color: #C40000;
+}
+.orderListTitle table{
+    background-color: #F5F5F5;
+    height: 30px;
+    margin: 20px 0px;
+    width: 100%;
+    border:1px solid #E8E8E8;
+    text-align: center;
+    font-size: 12px;
+}
+.orderListTitle table td{
+    padding: 12px 0;
+}
+.noRightborder{
+    border-right: 0px !important;
+}
+
+/*表格部分*/
+.boughtDiv{
+    max-width: 1013px;
+    margin: 30px auto;
+}
+.orderListItemTable{
+    border: 2px solid #ECECEC;
+    width: 100%;
+    margin: 20px 0px;
+    font-size: 12px;
+}
+.orderListItemTable:hover{
+    border:2px solid #aaa !important;
+}
+.orderListItemTable td{
+    padding: 8px  10px;
+}
+.orderListItemFirstTR{
+    background-color: #F1F1F1;
+}
+.orderItemWangWangGif{
+    display: inline-block;
+    width:67px;
+    height: 22px;
+    background-image: url(../img/img/site/wangwang.gif);
+    background-repeat:no-repeat;
+    background-position:-0px -0px;
+    position: relative;
+    top:0px;
+    left: 2px;
+}
+.orderItemDeleteTD{
+    text-align: right;
+}
+.orderListItemDelete{
+    display: inline-block;
+    margin: 0px 10px;
+    color: #999999;
+    font-size: 16px;
+}
+.orderListItemProductLinkOutDiv{
+    position: relative;
+    height: 80px;
+}
+.orderListItemProductLinkInnerDiv{
+    position: absolute;
+    bottom: 0px;
+}
+.orderListItemProductOriginalPrice{
+    color: #999999;
+    font-size: 12px;
+    text-decoration: line-through;
+    font-weight: bold;
+}
+.orderListItemProductPrice{
+    font-size: 13px;
+    color: #C40000;
+    font-weight: bold;
+}
+.orderListItemNumberTD{
+    text-align: center;
+}
+.orderItemOrderInfoPartTD{
+    border:1px solid #ECECEC;
+}
+.orderListItemNumber{
+    color: #3C3C3C;
+}
+.orderListItemProductRealPriceTD{
+    text-align: center;
+}
+.orderListItemProductRealPrice{
+    color:#3C3C3C;
+    font-size: 14px;
+    font-weight: bold;
+}
+.orderListItemPriceWithTransport{
+    color: #6C6C6C;
+    font-size:12px;
+}
+.orderListItemButtonTD{
+    text-align: center;
+}
+.orderListItemReview{
+    display: inline-block;
+    color: #000;
+    border:1px solid #DCDCDC;
+    background-color: #FFF;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 12px;
+}
+.orderListItemReview:hover{
+    border-color: #C40000;
+    color:#C40000;
+}
+.orderListItemConfirm{
+    display: inline-block;
+    color: #000;
+    border: 1px solid #ccc;
+    background-color: #FFF;
+    padding: 5px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+.orderListItemConfirm:hover{
+    display: inline-block;
+    background-color: #118ADB;
+    color: #FFF;
+}
+a{
+    color:#999; 
+}
+a:hover{
+    text-decoration: none;
+    color: #C40000;
+}
+.orderListItemTable{
+    display: none;
+}
+.orderListItemTable.active{
+    display: table;
+}

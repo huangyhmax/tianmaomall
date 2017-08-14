@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="../JS/jquery-3.2.1.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/publicpage.css">
+    <link rel="stylesheet" type="text/css" href="../css/geography.css">
+    <title>分类页面</title>
+    <script>
+        $(function(){
+            $("input.sortBarPrice").keyup(function(){
+                var num=$(this).val();
+                if(num.length==0){
+                    $(".productUnit").show();
+                    return;
+                }
+                num=parseInt(num);
+                if(isNaN(num)){
+                    num=1;
+                }
+                if(num<0){
+                    num=1;
+                }
+                console.log($(this).val(num));
+                $(this).val(num)  /*val()带参数，就是设置input的输入框的值，这里如果输入不符合规范，就全部转化显示为1*/
+                var startprice=$(".beginPrice").val();
+                var endprice=$(".endPrice").val();
+                if(!isNaN(startprice)&&!isNaN(endprice)){
+                    $(".productUnit").hide();
+                    $(".productUnit").each(function(){
+                        var price=$(this).attr("price");
+                        price=new Number(price);
+                        if(price<=endprice && price>=startprice){
+                            $(this).show();
+                        }
+                    })
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="header">
+		<nav class="topnav mid">
+			<a href="./firstpage.html">
+                <span class="redCat glyphicon glyphicon-home"></span>天猫首页
+            </a>
+			<span>喵，欢迎来天猫</span>
+			<a href="./loginin.html" class="loginstatus">请登录</a>
+			<a href="./signup.html"  class="signupstatus">免费注册</a>
+			<span class="right">
+                <a href="./mybuy.html" class="mybook">我的订单</a>
+                <a href="./buycar.html" class="buycar">
+				<span class="redCat glyphicon glyphicon-shopping-cart"></span>购物车
+				<strong>0</strong>件
+				</a>
+			</span>
+		</nav>
+	</div>
+    <div class="container">
+		<div class="session2">
+			<a href="#"><img class="tmall-logo" src="../img/img/site/logo.gif" alt=天猫logo""></a>
+			<div class="searchdiv">
+				<input class="search" type="text" placeholder="2017最新复古女鞋 夏日时尚" name="">
+				<button class="searchbutton" type="submit">搜索</button>
+				<div class="searchtips">
+					<span><a href="#">平衡车</a><span>|</span></span>
+					<span><a href="#">扫地机器人</a><span>|</span></span>
+					<span><a href="#">原汁机</a><span>|</span></span>
+					<span><a href="#">冰箱</a><span>|</span></span>
+					<!--<span><a href="#">空调</a></span>-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<img class="catear" id="catear" src="../img/img/site/catear.png" 
+	style="position:absolute; width:25px;left:260px;display:none;">
+    <div class="categoryPageDiv-top">
+        <img src="http://how2j.cn/tmall/img/category/72.jpg"> 
+        <div class="categorySortBar">
+            <table class="categorySortBarTable categorySortTable">
+                <tbody><tr>
+                    <td class="grayColumn"><a href="#nowhere">综合<span class="glyphicon glyphicon-arrow-down"></span></a></td>
+                    <td><a href="#nowhere">人气<span class="glyphicon glyphicon-arrow-down"></span></a></td>
+                    <td><a href="#nowhere">新品<span class="glyphicon glyphicon-arrow-down"></span></a></td>
+                    <td><a href="#nowhere">销量<span class="glyphicon glyphicon-arrow-down"></span></a></td>
+                    <td><a href="#nowhere">价格<span class="glyphicon glyphicon-resize-vertical"></span></a></td>
+                </tr>
+            </tbody></table>
+            <table class="categorySortBarTable">
+                <tbody><tr>
+                    <td><input type="text" placeholder="请输入" class="sortBarPrice beginPrice"></td>
+                    <td class="grayColumn priceMiddleColumn">-</td>
+                    <td><input type="text" placeholder="请输入" class="sortBarPrice endPrice"></td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+    <div class="categoryPageDiv">
+        <div class="categoryProducts">
+            <div price="799.2" class="productUnit">
+                <div class="productUnitFrame">
+                    <a href="./product.html">
+                        <img width="100px" src="http://how2j.cn/tmall/img/productSingle_middle/7058.jpg" class="productImage">
+                    </a>
+                    <span class="productPrice">¥799.20</span>
+                    <a href="./product.html" class="productLink">
+                        MAXFEEL休闲男士手包真皮手拿包大容量信封包手抓包夹包软韩版潮
+                    </a>
+                    <a href="./product.html" class="tmallLink">天猫专卖</a>
+                    <div class="show1 productInfo">
+                        <span class="monthDeal ">月成交 <span class="productDealNumber">16笔</span></span>
+                        <span class="productReview">评价<span class="productReviewNumber">14</span></span>
+                        <span class="wangwang">
+                            <a href="./product.html" class="wangwanglink">
+                                <img src="../img/img/site/wangwang.png">
+                            </a>    
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div price="511.2" class="productUnit">
+                <div class="productUnitFrame">
+                    <a href="./product.html">
+                        <img width="100px" src="http://how2j.cn/tmall/img/productSingle_middle/7047.jpg" class="productImage">
+                    </a>
+                    <span class="productPrice">¥511.20</span>
+                    <a href="./product.html" class="productLink">
+                    宾度 男士手包真皮大容量手拿包牛皮个性潮男包手抓包软皮信封包
+                    </a>
+                    <a href="./product.html" class="tmallLink">天猫专卖</a>
+                    <div class="show1 productInfo">
+                        <span class="monthDeal ">月成交 <span class="productDealNumber">49笔</span></span>
+                        <span class="productReview">评价<span class="productReviewNumber">18</span></span>
+                        <span class="wangwang">
+                        <a href="./product.html" class="wangwanglink">
+                            <img src="../img/img/site/wangwang.png">
+                        </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div price="448.2" class="productUnit">
+                <div class="productUnitFrame">
+                    <a href="./product.html">
+                        <img width="100px" src="http://how2j.cn/tmall/img/productSingle_middle/7036.jpg" class="productImage">
+                    </a>
+                    <span class="productPrice">¥448.20</span>
+                    <a href="./product.html" class="productLink">
+                        唯美诺新款男士手包男包真皮大容量小羊皮手拿包信封包软皮夹包潮
+                    </a>
+                    <a href="./product.html" class="tmallLink">天猫专卖</a>
+                    <div class="show1 productInfo">
+                        <span class="monthDeal ">月成交 <span class="productDealNumber">34笔</span></span>
+                        <span class="productReview">评价<span class="productReviewNumber">16</span></span>
+                        <span class="wangwang">
+                        <a href="./product.html" class="wangwanglink">
+                            <img src="../img/img/site/wangwang.png">
+                        </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div price="411.6" class="productUnit">
+                <div class="productUnitFrame">
+                    <a href="./product.html">
+                        <img width="100px" src="http://how2j.cn/tmall/img/productSingle_middle/7025.jpg" class="productImage">
+                    </a>
+                    <span class="productPrice">¥411.60</span>
+                    <a href="./product.html" class="productLink">
+                        英伦邦纹男士手包牛皮大容量真皮手拿包手抓包双拉链商务正品软皮
+                    </a>
+                    <a href="./product.html" class="tmallLink">天猫专卖</a>
+                    <div class="show1 productInfo">
+                        <span class="monthDeal ">月成交 <span class="productDealNumber">25笔</span></span>
+                        <span class="productReview">评价<span class="productReviewNumber">19</span></span>
+                        <span class="wangwang">
+                        <a href="./product.html" class="wangwanglink">
+                            <img src="../img/img/site/wangwang.png">
+                        </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div price="157.25" class="productUnit">
+                <div class="productUnitFrame">
+                    <a href="./product.html">
+                        <img width="100px" src="http://how2j.cn/tmall/img/productSingle_middle/7014.jpg" class="productImage">
+                    </a>
+                    <span class="productPrice">¥157.25</span>
+                    <a href="./product.html" class="productLink">
+                        劳迪莱斯男士手包休闲手拿包牛皮大容量钱包男包软面小包包手抓包
+                    </a>
+                    <a href="./product.html" class="tmallLink">天猫专卖</a>
+                    <div class="show1 productInfo">
+                        <span class="monthDeal ">月成交 <span class="productDealNumber">17笔</span></span>
+                        <span class="productReview">评价<span class="productReviewNumber">16</span></span>
+                        <span class="wangwang">
+                        <a href="./product.html" class="wangwanglink">
+                            <img src="../img/img/site/wangwang.png">
+                        </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div price="268.2" class="productUnit">
+                <div class="productUnitFrame">
+                    <a href="./product.html">
+                        <img width="100px" src="http://how2j.cn/tmall/img/productSingle_middle/7003.jpg" class="productImage">
+                    </a>
+                    <span class="productPrice">¥268.20</span>
+                    <a href="./product.html" class="productLink">
+                    帕朗尼男士手拿包真皮手包商务休闲头层牛皮软牛皮大容量休闲钱包
+                    </a>
+                    <a href="./product.html" class="tmallLink">天猫专卖</a>
+                    <div class="show1 productInfo">
+                        <span class="monthDeal ">月成交 <span class="productDealNumber">5笔</span></span>
+                        <span class="productReview">评价<span class="productReviewNumber">19</span></span>
+                        <span class="wangwang">
+                        <a href="./product.html" class="wangwanglink">
+                            <img src="../img/img/site/wangwang.png">
+                        </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div price="233.4" class="productUnit">
+                <div class="productUnitFrame">
+                    <a href="./product.html">
+                        <img width="100px" src="http://how2j.cn/tmall/img/productSingle_middle/6992.jpg" class="productImage">
+                    </a>
+                    <span class="productPrice">¥233.40</span>
+                    <a href="./product.html" class="productLink">
+                    编织手包手拿包男信封大容量手抓包真皮韩版潮商务休闲牛皮男包
+                    </a>
+                    <a href="./product.html" class="tmallLink">天猫专卖</a>
+                    <div class="show1 productInfo">
+                        <span class="monthDeal ">月成交 <span class="productDealNumber">8笔</span></span>
+                        <span class="productReview">评价<span class="productReviewNumber">19</span></span>
+                        <span class="wangwang">
+                        <a href="./product.html" class="wangwanglink">
+                            <img src="../img/img/site/wangwang.png">
+                        </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div price="952.0" class="productUnit">
+                <div class="productUnitFrame">
+                    <a href="./product.html">
+                        <img width="100px" src="http://how2j.cn/tmall/img/productSingle_middle/6981.jpg" class="productImage">
+                    </a>
+                    <span class="productPrice">¥952.00</span>
+                    <a href="./product.html" class="productLink">
+                    犟牛男士手包真皮手拿包头层牛皮商务大容量手抓包软皮夹包信封包
+                    </a>
+                    <a href="./product.html" class="tmallLink">天猫专卖</a>
+                    <div class="show1 productInfo">
+                        <span class="monthDeal ">月成交 <span class="productDealNumber">20笔</span></span>
+                        <span class="productReview">评价<span class="productReviewNumber">16</span></span>
+                        <span class="wangwang">
+                        <a href="./product.html" class="wangwanglink">
+                            <img src="../img/img/site/wangwang.png">
+                        </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+    </div>
+    <div class="footer">
+		<div class="partone mid">
+			<div class="pics">
+				<a href="#"><img src="../img/img/site/ensure.png" alt=""></a>
+			</div>
+			<div class="linkdiv clearfix">
+				<div class="boxchoose clearfix">
+					<span class="boxchoose-tip">购物指南</span>
+					<a href="#">免费注册</a>
+					<a href="#">开通支付宝</a>
+					<a href="#">支付宝充值</a>
+				</div>
+				<div class="boxchoose clearfix">
+					<span class="boxchoose-tip">天猫保障</span>
+					<a href="#">发票保障</a>
+					<a href="#">售后规则</a>
+					<a href="#">缺货赔付</a>
+				</div>
+				<div class="boxchoose clearfix">
+					<span class="boxchoose-tip">支付方式</span>
+					<a href="#">快捷支付</a>
+					<a href="#">信用卡</a>
+					<a href="#">蚂蚁花呗</a>
+					<a href="#">货到付款</a>
+				</div>
+				<div class="boxchoose clearfix">
+					<span class="boxchoose-tip">商家服务</span>
+					<a href="#">商家入驻</a>
+					<a href="#">商家中心</a>
+					<a href="#">天猫智库</a>
+					<a href="#">天猫规则</a>
+					<a href="#">物流服务</a>
+					<a href="#">喵言喵语</a>
+					<a href="#">运营服务</a>
+				</div>
+				<div class="boxchoose clearfix">
+					<span class="boxchoose-tip">手机天猫</span>
+					<a href="#"><img src="../img/img/site/ma.png" alt="APP下载二维码"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer2">
+		<img class="tmall-pic" src="../img/img/site/cateye.png" alt="">
+		<div class="footer-main">
+			<div class="part mid">
+				<a href="">关于天猫</a>
+				<a href="">帮助中心</a>
+				<a href="">开放平台</a>
+				<a href="">诚聘英才</a>
+				<a href="">联系我们</a>
+				<a href="">网站合作</a>
+				<a href="">法律声明</a>
+				<a href="">知识产权</a>
+				<a href="">廉正举报</a>
+			</div>
+			<div class="part mid">
+				<a href="">阿里巴巴集团</a><span>|</span>
+				<a href="">淘宝网</a><span>|</span>
+				<a href="">天猫</a><span>|</span>
+				<a href="">聚划算</a><span>|</span>
+				<a href="">全球速卖通</a><span>|</span>
+				<a href="">阿里巴巴国际交易市场</a><span>|</span>
+				<a href="">1688</a><span>|</span>
+				<a href="">阿里妈妈</a><span>|</span>
+				<a href="">阿里旅行·去啊</a><span>|</span>
+				<a href="">阿里云计算</a><span>|</span>
+				<a href="">阿里通信</a><span>|</span>
+				<a href="">YunOS</a><span>|</span>
+				<a href="">万网</a><span>|</span>
+				<a href="">高德</a><span>|</span>
+				<a href="">优视</a><span>|</span>
+				<a href="">友盟</a><span>|</span>
+				<a href="">虾米</a><span>|</span>
+				<a href="">天天动听</a><span>|</span>
+				<a href="">来往</a><span>|</span>
+				<a href="">钉钉</a><span>|</span>
+				<a href="">支付宝</a><span>|</span>
+			</div>
+			<div class="license mid">
+				<span>增值电信业务经营许可证： 浙B2-20110446</span>
+				<span>网络文化经营许可证：浙网文[2015]0295-065号</span>
+				<span>互联网医疗保健信息服务 审核同意书 浙卫网审【2014】6号 </span>
+				<span>互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005</span>
+				<div class="year">© 2003-2016 TMALL.COM 版权所有</div>
+				<div class="pics">
+					<img src="../img/img/site/copyRight1.jpg" alt="">
+					<img src="../img/img/site/copyRight2.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

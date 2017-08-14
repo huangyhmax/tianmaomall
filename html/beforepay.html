@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/publicpage.css">
+    <link rel="stylesheet" type="text/css" href="../css/beforepay.css">
+    <title>结算页面</title>
+</head>
+<body>
+    <div class="header">
+		<nav class="topnav mid">
+			<a href="./firstpage.html">
+                <span class="redCat glyphicon glyphicon-home"></span>天猫首页
+            </a>
+			<span>喵，欢迎来天猫</span>
+			<a href="./loginin.html" class="loginstatus">请登录</a>
+			<a href="./signup.html"  class="signupstatus">免费注册</a>
+			<span class="right">
+                <a href="./mybuy.html" class="mybook">我的订单</a>
+                <a href="./buycar.html" class="buycar">
+				<span class="redCat glyphicon glyphicon-shopping-cart"></span>购物车
+				<strong>0</strong>件
+				</a>
+			</span>
+		</nav>
+	</div>
+    <div class="buyPageDiv">
+        <div class="buyFlow">
+            <img src="../img/img/site/simpleLogo.png" class="pull-left">
+            <img src="../img/img/site/buyflow.png" class="pull-right">
+        </div>
+        <div class="address">
+            <div class="addressTip">输入收货地址:</div>
+            <table class="addressTable">
+                <tr>
+                    <td class="firstColumn">详细地址<span class="redStar">*</span></td>
+                    <td><textarea name="address" placeholder="建议您如实填写详细收货地址，例如接到名称，门牌好吗，楼层和房间号等信息"></textarea></td>
+                </tr>
+                <tr>
+                    <td>邮政编码</td>
+                    <td><input type="text" name="post" placeholder="如果您不清楚邮递区号，请填写000000"></td>
+                </tr>
+                <tr>
+                    <td>收货人姓名<span class="redStar">*</span></td>
+                    <td><input type="text" placeholder="长度不超过25个字符" name="receiver"></td>
+                </tr>
+                <tr>
+                    <td>手机号码<span class="redStar">*</span></td>
+                    <td><input type="text" name="mobile" placeholder="请输入11位手机号码"></td>
+                </tr>	
+            </table>
+        </div>
+        <div class="productList">
+            <div class="productListTip">确认订单信息</div>
+            <table class="productListTable">
+                <thead>
+                    <tr>
+                        <th class="productListTableFirstColumn" colspan="2">
+                            <img src="../img/img/site/tmallbuy.png" class="tmallbuy">
+                            <a href="#nowhere" class="marketLink">店铺：天猫店铺</a>
+                            <a href="#nowhere" class="wangwanglink"><span class="wangwangGif"></span></a>
+                        </th>
+                        <th>单价</th>
+                        <th>数量</th>
+                        <th>小计</th>
+                        <th>配送方式</th>
+                    </tr>
+                    <tr class="rowborder">
+                        <td colspan="2"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody class="productListTableTbody">
+                    <tr class="orderItemTR">
+                        <td class="orderItemFirstTD">
+                            <img width="20px"  src="http://how2j.cn/tmall/img/productSingle_middle/4206.jpg" class="orderItemImg">
+                        </td>
+                        <td class="orderItemProductInfo">
+                            <a class="orderItemProductLink" href="#nowhere">
+                                Philips/飞利浦 HR1897/30破壁微榨原汁机 多功能家用果汁榨汁机
+                            </a>
+                            <img title="支持信用卡支付" src="../img/img/site/creditcard.png">
+                            <img title="消费者保障服务,承诺7天退货" src="../img/img/site/7day.png">
+                            <img title="消费者保障服务,承诺如实描述" src="../img/img/site/promise.png">
+                        </td>
+                        <td>
+                            <span class="orderItemProductPrice">￥3,514.05</span>
+                        </td>
+                        <td>
+                            <span class="orderItemProductNumber">2</span>
+                        </td>
+                        <td>
+                            <span class="orderItemUnitSum">￥7,028.10</span>
+                        </td>
+                        <td class="orderItemLastTD" rowspan="5">
+                            <label class="orderItemDeliveryLabel">
+                                <input type="radio" checked="checked" value="">
+                                普通配送
+                            </label>
+                            <select class="orderItemDeliverySelect">
+                                <option>快递 免邮费</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="orderItemTR">
+                        <td class="orderItemFirstTD">
+                            <img width="20px"  src="http://how2j.cn/tmall/img/productSingle_middle/3796.jpg" class="orderItemImg">
+                        </td>
+                        <td class="orderItemProductInfo">
+                            <a class="orderItemProductLink" href="#nowhere">
+                                公众智能扫地机器人家用全自动电动清洁地毯擦拖地一体机吸尘器
+                            </a>
+                            <img title="支持信用卡支付" src="../img/img/site/creditcard.png">
+                            <img title="消费者保障服务,承诺7天退货" src="../img/img/site/7day.png">
+                            <img title="消费者保障服务,承诺如实描述" src="../img/img/site/promise.png">
+                        </td>
+                        <td>
+                            <span class="orderItemProductPrice">￥2,124.15</span>
+                        </td>
+                        <td>
+                            <span class="orderItemProductNumber">1</span>
+                        </td>
+                        <td>
+                            <span class="orderItemUnitSum">￥2,124.15</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="orderItemSumDiv">
+                <div class="pull-left">
+                    <span class="leaveMessageText">给卖家留言:</span>
+                    <span>
+                        <img src="../img/img/site/leaveMessage.png" class="leaveMessageImg">
+                    </span>
+                    <span class="leaveMessageTextareaSpan" > <!--style="display: none;"-->
+                        <textarea class="leaveMessageTextarea" name="userMessage"></textarea>
+                        <div>
+                            <span>还可以输入200个字符</span>
+                        </div>
+                    </span>
+                </div>
+                <span class="pull-right">店铺合计(含运费): <span class="TotalSum">￥9,152.25</span></span>
+            </div>
+            <div class="submitOrderDiv">
+                <a  class="submitOrderButton" href="./paymoney.html">提交订单</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+		<div class="partone mid">
+			<div class="pics">
+				<a href="#"><img src="../img/img/site/ensure.png" alt=""></a>
+			</div>
+			<div class="linkdiv clearfix">
+				<div class="boxchoose clearfix">
+					<span class="boxchoose-tip">购物指南</span>
+					<a href="#">免费注册</a>
+					<a href="#">开通支付宝</a>
+					<a href="#">支付宝充值</a>
+				</div>
+				<div class="boxchoose clearfix">
+					<span class="boxchoose-tip">天猫保障</span>
+					<a href="#">发票保障</a>
+					<a href="#">售后规则</a>
+					<a href="#">缺货赔付</a>
+				</div>
+				<div class="boxchoose clearfix">
+					<span class="boxchoose-tip">支付方式</span>
+					<a href="#">快捷支付</a>
+					<a href="#">信用卡</a>
+					<a href="#">蚂蚁花呗</a>
+					<a href="#">货到付款</a>
+				</div>
+				<div class="boxchoose clearfix">
+					<span class="boxchoose-tip">商家服务</span>
+					<a href="#">商家入驻</a>
+					<a href="#">商家中心</a>
+					<a href="#">天猫智库</a>
+					<a href="#">天猫规则</a>
+					<a href="#">物流服务</a>
+					<a href="#">喵言喵语</a>
+					<a href="#">运营服务</a>
+				</div>
+				<div class="boxchoose clearfix">
+					<span class="boxchoose-tip">手机天猫</span>
+					<a href="#"><img src="../img/img/site/ma.png" alt="APP下载二维码"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer2">
+		<img class="tmall-pic" src="../img/img/site/cateye.png" alt="">
+		<div class="footer-main">
+			<div class="part mid">
+				<a href="">关于天猫</a>
+				<a href="">帮助中心</a>
+				<a href="">开放平台</a>
+				<a href="">诚聘英才</a>
+				<a href="">联系我们</a>
+				<a href="">网站合作</a>
+				<a href="">法律声明</a>
+				<a href="">知识产权</a>
+				<a href="">廉正举报</a>
+			</div>
+			<div class="part mid">
+				<a href="">阿里巴巴集团</a><span>|</span>
+				<a href="">淘宝网</a><span>|</span>
+				<a href="">天猫</a><span>|</span>
+				<a href="">聚划算</a><span>|</span>
+				<a href="">全球速卖通</a><span>|</span>
+				<a href="">阿里巴巴国际交易市场</a><span>|</span>
+				<a href="">1688</a><span>|</span>
+				<a href="">阿里妈妈</a><span>|</span>
+				<a href="">阿里旅行·去啊</a><span>|</span>
+				<a href="">阿里云计算</a><span>|</span>
+				<a href="">阿里通信</a><span>|</span>
+				<a href="">YunOS</a><span>|</span>
+				<a href="">万网</a><span>|</span>
+				<a href="">高德</a><span>|</span>
+				<a href="">优视</a><span>|</span>
+				<a href="">友盟</a><span>|</span>
+				<a href="">虾米</a><span>|</span>
+				<a href="">天天动听</a><span>|</span>
+				<a href="">来往</a><span>|</span>
+				<a href="">钉钉</a><span>|</span>
+				<a href="">支付宝</a><span>|</span>
+			</div>
+			<div class="license mid">
+				<span>增值电信业务经营许可证： 浙B2-20110446</span>
+				<span>网络文化经营许可证：浙网文[2015]0295-065号</span>
+				<span>互联网医疗保健信息服务 审核同意书 浙卫网审【2014】6号 </span>
+				<span>互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005</span>
+				<div class="year">© 2003-2016 TMALL.COM 版权所有</div>
+				<div class="pics">
+					<img src="../img/img/site/copyRight1.jpg" alt="">
+					<img src="../img/img/site/copyRight2.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+    <script>
+        $('.leaveMessageImg').click(function(){
+            $(this).css("display","none");
+            $('.leaveMessageTextareaSpan>.leaveMessageTextarea').css("display","inline-block");
+        })
+    </script>
+</body>
+</html>

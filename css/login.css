@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.simpleLogo{
+    padding: 30px 0;
+}
+.loginBackgroundImg{
+    display: block;
+    margin: 0 auto;
+}
+#loginSmallDiv{
+    background-color: #fff;
+    position: absolute;
+    right: 180px;
+    top: 180px;
+    width: 350px;
+    height: 400px;
+    padding: 60px 25px 80px 25px;
+}
+.login_acount_text{
+    color: #3C3C3C;
+    font-size: 26px;
+    font-weight: bold;
+    display: block;
+}
+.login_acount_text{
+    font-size: 16px;
+    font-weight: bold;
+    color: #3C3C3C;
+}
+.loginInput{
+    border: 1px solid #CBCBCB;
+    margin: 20px 0;
+}
+.loginInputIcon{
+    background-color: #CBCBCB;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.loginInputIcon .glyphicon{
+    font-size: 22px;
+    position: relative;
+    left: 9px;
+    top: 9px;
+    color:#606060;
+}
+.loginInput input{
+    display: inline-block;
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 34px;
+    position: relative;
+    left: -3px;
+    top: 4px;
+}
+a{
+    color: #999;
+}
+a:hover{
+    text-decoration: none;
+    color: #C40000;
+}
+.redButton{
+    color: white;
+    background-color: #C40000;
+    font-size: 14px;
+    font-weight: bold;
+}
+.forgottext{
+    margin: 20px -1.8px;
+}
+/*尾部的样式*/
+.footer{
+    min-width: 1024px;
+    /*background: blue;*/
+}
+.footer-top{
+    border-top: 1px solid #e7e7e7;
+    /*background: red;*/
+}
+.footer-bottom{
+    /*background: black;*/
+}
+.mid{
+    width: 1024px;
+    margin: 0 auto;
+}
+.footer{
+    border-top: 1px solid #e7e7e7;
+}
+.footer-main{
+    background-color: black;
+    border-top: 2px solid #C40000;
+}
+.tmall-pic{
+    margin-left: 100px;
+}
+.footer-main{
+    
+}
+.footer-main .part a{
+    color: #fff;
+    font-size: 12px;
+    padding: 0 5px;
+    /*margin: 10px 0;
+    padding: 0 5px;*/
+
+}
+.footer-main .part{
+    padding: 10px 0;
+}
+.footer-main .part span{
+    color: #fff;
+}
+.footer-main .license span{
+    /*margin: 10px 0;*/
+    color: #686868;
+    font-size: 12px;
+}
+.footer-main .license .year{
+    color: #686868;
+    padding: 10px 0;
+}
+.footer-main .license .pics{
+    padding-bottom: 20px;
+}
+.partone{
+    /*margin-top: 500px;*/
+    /*border-top: 1px solid #e7e7e7;*/
+}
+.partone .pics{
+    margin: 24px 0;
+    text-align: center;/*居中*/
+}
+.linkdiv{
+    margin: 0 20px;
+    border-top: 1px solid #e7e7e7;
+    padding-top:30px; 
+}
+.linkdiv .boxchoose{
+    width: 20%;
+    float: left;
+    padding-left: 15px;
+}
+.linkdiv .boxchoose a{
+    display: block;
+    padding-top: 3px;
+    text-decoration: none;
+    color: #999;
+}
+.linkdiv .boxchoose a:hover{
+    color: #C40000;
+}
+.boxchoose-tip{
+    font-size: 16px;
+    font-weight: bold;
+    color: #646464;
+}
+.clearfix:after{
+    content: '';
+    clear: both;
+    display: block;
+}

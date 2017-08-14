@@ -1,0 +1,59 @@
+body{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.payedDiv{
+    border: 1px solid #D4D4D4;
+    max-width: 1013px;
+    margin: 30px auto 20px;
+}
+.payedTextDiv{
+    background-color: #ECFFDC;
+    height: 60px;
+}
+.payedTextDiv img{
+    margin: 18px 10px 15px 25px;
+}
+.payedTextDiv span{
+    font-size: 16px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.payedAddressInfo{
+    padding: 26px 35px;
+}
+.payedAddressInfo li{
+    background-image: url(../img/img/site/li_dot.png);
+    background-repeat: no-repeat;
+    background-position: 0px 13px;
+    list-style: none;
+    color: #333333;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.payedInfoPrice{
+    color: #B10000;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Arial;
+}
+.paedCheckLinkDiv{
+    margin-left: 38px;
+}
+a.payedCheckLink{
+    color: #2D8CBA;
+}
+.lineseperate{
+    border-top: 1px dotted #D4D4D4;
+    margin: 0 30px;
+}
+.warningDiv{
+    margin: 23px 45px;
+    color: black;
+}
+.boldWord{
+    font-weight: bold;
+}
+.redColor{
+    color: #C40000;
+}

@@ -20,7 +20,7 @@ $(function(){
         // console.log(1)
     })
     // img4load
-    $(".bigImg").load(
+    $('.bigImg').load(
         function(){
             $(".smallImage").each(function(){
                 var bigImageURL = $(this).attr("bigImageURL");

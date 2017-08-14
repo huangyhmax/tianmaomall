@@ -100,9 +100,9 @@ function selectall(){
         }
     });
     if(selectAll)
-        $(".titlechoose").attr("src","http://how2j.cn/tmall/img/site/cartSelected.png");
+        $(".titlechoose").attr("src","../img/img/site/cartSelected.png");
     else
-        $(".titlechoose").attr("src","http://how2j.cn/tmall/img/site/cartNotSelected.png");
+        $(".titlechoose").attr("src","../img/img/site/cartNotSelected.png");
 }
 function buttonchange(){
     var selectAny=false;
@@ -126,12 +126,12 @@ $(function(){
         var selectit=$(this).attr("selectit")
         console.log(selectit);
         if("selectit"==selectit){
-            $(this).attr("src","http://how2j.cn/tmall/img/site/cartNotSelected.png");
+            $(this).attr("src","../img/img/site/cartNotSelected.png");
             $(this).attr("selectit","false");
             $(this).parents(".carCotent-middle").css("background-color","#fff");
         }else{
             
-            $(this).attr("src","http://how2j.cn/tmall/img/site/cartSelected.png");
+            $(this).attr("src","../img/img/site/cartSelected.png");
             $(this).attr("selectit","selectit");
             $(this).parents(".carCotent-middle").css("background-color","#FFF8E1");
         }
@@ -142,18 +142,18 @@ $(function(){
     $('.titlechoose').click(function(){
         var selectit=$(this).attr("selectit");
         if("selectit"==selectit){
-            $('.titlechoose').attr("src","http://how2j.cn/tmall/img/site/cartNotSelected.png");
+            $('.titlechoose').attr("src","../img/img/site/cartNotSelected.png");
             $('.titlechoose').attr("selectit",false);
             $('.cartProductItemIfSelected').each(function(){
-                $(this).attr("src","http://how2j.cn/tmall/img/site/cartNotSelected.png");
+                $(this).attr("src","../img/img/site/cartNotSelected.png");
                 $(this).attr("selectit","false");
                 $(this).parents(".carCotent-middle").css("background-color","#fff");
             })
         }else{
-            $('.titlechoose').attr("src","http://how2j.cn/tmall/img/site/cartSelected.png");
+            $('.titlechoose').attr("src","../img/img/site/cartSelected.png");
             $('.titlechoose').attr("selectit","selectit");
             $('.cartProductItemIfSelected').each(function(){
-                $(this).attr("src","http://how2j.cn/tmall/img/site/cartSelected.png");
+                $(this).attr("src","../img/img/site/cartSelected.png");
                 $(this).attr("selectit","selectit");
                 $(this).parents(".carCotent-middle").css("background-color","#FFF8E1");
             })
